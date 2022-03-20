@@ -5,6 +5,7 @@ session_start();
 if(count($_SESSION) > 0){
     $name = $_SESSION['fn'];
     $email = $_SESSION['email'];
+    $password = $_SESSION['password'];
 //    print_r($_SESSION);
 ?>
 <html>
