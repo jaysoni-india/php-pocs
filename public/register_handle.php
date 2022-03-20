@@ -12,6 +12,9 @@ if (isset($_POST['submit_btn'])){
         $sql = "INSERT INTO users (name, email, password) VALUES ('$full_name', '$email', '$user_password')";
 
         if ($conn->query($sql) === TRUE) {
+            // TODO get newly registered $id using SQL "select id from users where email = $email";
+            // mysql fetch $id = $row['id'];
+            // TODO save this id in Session with key id
             $_SESSION['fn'] = $full_name;
             $_SESSION['email'] = $email;
             header('Location: ./dashboard.php');
