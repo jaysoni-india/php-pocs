@@ -4,4 +4,3 @@
     <input name="user_password" type="password" placeholder="Enter Password"> <br />
     <input type="submit" name="submit_btn" value="Register">
 </form>
-
